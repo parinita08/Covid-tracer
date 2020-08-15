@@ -1,12 +1,9 @@
 import React from 'react';
-// import Cards from './components/Cards/Cards';
-// import Chart from './components/Chart/Chart';
-// import CountryPicker from './components/CountryPicker/CountryPicker';
 import {Cards,Chart,CountryPicker} from './components';
 import styles from './App.module.css';
 import {fetchData} from './api';
-// import logo from './logo.svg';
-// import './App.css';
+
+//37:45
 
 class App extends React.Component {
   state = {
@@ -14,8 +11,8 @@ class App extends React.Component {
   }
 
   async componentDidMount() {
-    const fetchedData = await fetchData();
-    this.setState({data: fetchedData});
+    const data = await fetchData();
+    this.setState({data});
   }
   render() {
     const {data} = this.state;
@@ -25,7 +22,7 @@ class App extends React.Component {
         <CountryPicker />
         <Chart />
       </div>
-    )
+    );
   }
 }
 
