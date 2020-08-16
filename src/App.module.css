@@ -6,4 +6,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* gets the graph below the cards i.e column */
+  flex-direction: column; 
+}
+
+/* for the graph */
+.image {
+  width: 370px;
+  margin-top: 50px;
 }
