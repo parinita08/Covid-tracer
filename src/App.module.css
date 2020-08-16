@@ -16,12 +16,20 @@ body {
   margin-top: 50px;
 }
 
+.p {
+  color: cadetblue;
+  font-size: 10px;
+}
+
 /* for responsiveness */
 @media only screen and (max-width: 770px) {
   .container {
     margin: 0 10%;
   }
   .h2 {
+    width: 100%;
+  }
+  .p {
     width: 100%;
   }
 }
